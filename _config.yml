@@ -3,3 +3,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   A simple Jekyll site hosted on GitHub Pages.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jeremyone.github.io"
+exclude: [
+  "readme.md"
+]
