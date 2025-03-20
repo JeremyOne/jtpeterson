@@ -1,20 +1,43 @@
 ---
 layout: json
-title: "HTTP 200 - OK"
+title: "JTTP 200 - OK"
 ---
 
 <script>
     const jsonData = 
     {
-        author: "Jeremy T Peterson",
-        location: "Portland, OR",
-        links_skills_interests: 
+        "author": "Jeremy T Peterson",
+        "location": "Portland, OR",
+        
+        "skills": {
+            "programming": ["dotnet core", "c#", "c++", "PowerShell", "Aspire", "MVC", "Git", "SQL", "JavaScript", "Python", "HTML/CSS"],
+            "platforms": ["Azure", "AWS", "Windows", "Linux", "Active Directory", "DNS", "Firewalls", "Advanced networking and routing", "Hardware troubleshooting", "Data replication"],
+            "cybersecurity": ["Cybersecurity", "Penetration testing", "Red/Blue teams", "Forensic Analysis", "Disaster Recovery and DR Exercises"],
+            "devops": ["CI/CD", "DevOps", "Docker and containers", "Azure DevOps and pipelines", "Github actions", "Terraform", "Encryption", "Certificates and Secret Management"],
+            "ai_ml": ["AI / Machine learning", "LLMs", "Agents", "Model hosting and training", "Image processing and generation", "Data processing"],
+            "architecture": ["Solution Architecture", "Solution Documentation"],
+            "management": ["Product Design", "Project Management", "Product Owner", "Jira", "Agile in many forms"]
+        },
+        "projects": [
+            "Researched and developed an open source peer-to-peer blob storage platform with a heavy focus on encryption, x509 certificate identities, and used distributed hash tables. Intended for use in distributed applications.",
+            "Custom web app for ranked-choice voting at live Portland film events, with ballot printing, real-time displays for tallies and current winner selection."
+        ],
+        "volunteering": {
+            "description": "Volunteered with multiple non-profits and small local businesses for a variety of roles, est. 200 hours a year."
+        },
+        "interests": ["Film", "photography", "design", "Led small teams in multiple high-pressure, short duration film competitions"],
+        "ctfs": [
             {
-                linkedIn: "https://www.linkedin.com/in/jeremyone/",
-                favoriteHttpCode: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/418", 
-                resume: "/assets/cv5.pdf",
-                ctf2022: "https://projectmammoth.com/dialed-up-ctf-2022-archive/",
-                ctf2023: "https://github.com/project-mammoth/mammoth-ctf-2023"
+            "year": 2022,
+            "achievement": "Won a Pwnie!",
+            "description": "Submitted to the Blackhat music competition, we created an MP3 with an embedded ZIP in the ID3 tags, with multiple specialized challenges.",
+            "link": "https://projectmammoth.com"
+            },
+            {
+            "year": 2023,
+            "achievement": "2nd CTF",
+            "link": "https://projectmammoth.com"
             }
+        ]
     };
 </script>
