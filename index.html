@@ -1,6 +1,6 @@
 ---
 layout: json
-title: "JTTP 200 - OK"
+title: "HTTP 200 - OK"
 ---
 
 <script>
@@ -10,34 +10,44 @@ title: "JTTP 200 - OK"
         "location": "Portland, OR",
         
         "skills": {
-            "programming": ["dotnet core", "c#", "c++", "PowerShell", "Aspire", "MVC", "Git", "SQL", "JavaScript", "Python", "HTML/CSS"],
+            "development": ["dotnet core", "c#", "c++", "PowerShell", "Aspire", "MVC", "Git", "SQL", "JavaScript", "Python", "HTML/CSS"],
             "platforms": ["Azure", "AWS", "Windows", "Linux", "Active Directory", "DNS", "Firewalls", "Advanced networking and routing", "Hardware troubleshooting", "Data replication"],
-            "cybersecurity": ["Cybersecurity", "Penetration testing", "Red/Blue teams", "Forensic Analysis", "Disaster Recovery and DR Exercises"],
+            "infosec": ["Cybersecurity", "Penetration testing", "Red/Blue teams", "Forensic Analysis", "Disaster Recovery and DR Exercises"],
             "devops": ["CI/CD", "DevOps", "Docker and containers", "Azure DevOps and pipelines", "Github actions", "Terraform", "Encryption", "Certificates and Secret Management"],
             "ai_ml": ["AI / Machine learning", "LLMs", "Agents", "Model hosting and training", "Image processing and generation", "Data processing"],
             "architecture": ["Solution Architecture", "Solution Documentation"],
-            "management": ["Product Design", "Project Management", "Product Owner", "Jira", "Agile in many forms"]
+            "management": ["Product Design", "Project Management", "Product Owner", "Jira", "Agile"]
         },
-        "projects": [
-            "Researched and developed an open source peer-to-peer blob storage platform with a heavy focus on encryption, x509 certificate identities, and used distributed hash tables. Intended for use in distributed applications.",
-            "Custom web app for ranked-choice voting at live Portland film events, with ballot printing, real-time displays for tallies and current winner selection."
-        ],
+
+        "projects": {
+            "crypt_link": {
+                "description": "Researched and developed an open source peer-to-peer blob storage platform with a heavy focus on encryption",
+                "tech": "x509 identities, distributed hash tables, blind hosted distributed applications."
+            },
+            "attack_of_the_flix": {
+                "description": "Web app for voting at live film events",
+                "tech": "ranked-choice voting, ballot printing, real-time winner selection."
+            },
+            "ctfs": [
+                {
+                    "year": 2022,
+                    "achievement": "Won a Pwnie!",
+                    "description": "Submitted to the Blackhat music competition, we created an MP3 with an embedded ZIP in the ID3 tags, with multiple specialized challenges.",
+                    "link": "https://projectmammoth.com"
+                },
+                {
+                    "year": 2023,
+                    "achievement": "2nd CTF",
+                    "link": "https://projectmammoth.com"
+                }
+            ]
+        },
+
         "volunteering": {
             "description": "Volunteered with multiple non-profits and small local businesses for a variety of roles, est. 200 hours a year."
         },
-        "interests": ["Film", "photography", "design", "Led small teams in multiple high-pressure, short duration film competitions"],
-        "ctfs": [
-            {
-            "year": 2022,
-            "achievement": "Won a Pwnie!",
-            "description": "Submitted to the Blackhat music competition, we created an MP3 with an embedded ZIP in the ID3 tags, with multiple specialized challenges.",
-            "link": "https://projectmammoth.com"
-            },
-            {
-            "year": 2023,
-            "achievement": "2nd CTF",
-            "link": "https://projectmammoth.com"
-            }
-        ]
+
+        "interests": ["Film", "photography", "design", "music production"]      
+
     };
 </script>
